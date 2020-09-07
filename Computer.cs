@@ -12,7 +12,7 @@ namespace OOPExample
         protected string _name = "Unknow";
         public bool isOn { get; private set;  }
 
-        public string name
+        public virtual string name
         {
             get
             {
@@ -39,7 +39,7 @@ namespace OOPExample
             isOn = false;
         }
 
-        public void TogglePower()
+        public virtual void TogglePower()
         {
             if (isOn)
             {
