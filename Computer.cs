@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPExample
+namespace OOPExamples
 {
-    abstract class Computer
+    abstract class Computer: IPowerOn
     {
+        protected IPowerOn powerController;
+        protected string _name = "Unknown";
 
-        protected string _name = "Unknow";
-        public bool isOn { get; private set;  }
-
+        public bool isOn { get { return powerController.isOn; } }
         public virtual string name
         {
             get
@@ -24,30 +24,15 @@ namespace OOPExample
             }
         }
 
-        public Computer(String name)
+        public Computer(string name)
         {
             this.name = name;
+            powerController = new PowerController();
         }
-
-        protected void TurOn()
-        {
-            isOn = true;
-        }
-
-        protected void TurOff()
-        {
-            isOn = false;
-        }
-
+        
         public virtual void TogglePower()
         {
-            if (isOn)
-            {
-                TurOff();
-            } else
-            {
-                TurOn();
-            }
+            powerController.TogglePower();
         }
 
     }

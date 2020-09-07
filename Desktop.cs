@@ -4,39 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPExample
+namespace OOPExamples
 {
-    class Desktop : Computer
+    class Desktop : Computer, ISleep
     {
-        public enum CaseType 
-        { 
+        private ISleep sleepController;
+
+        public enum CaseType
+        {
             Tower,
             MiniTower
         }
 
-        public bool isSleeping { get; private set; }
+        public bool isSleeping
+        {
+            get
+            {
+                return sleepController.isSleeping;
+            }
+        }
 
         public CaseType caseType { get; private set; }
 
-        public override string name { get 
+        public override string name { get
             {
-                return base.name + " of Type " + caseType;
+                return base.name + " " + caseType;
             }
         }
 
         public Desktop(string name, CaseType caseType) : base(name)
         {
             this.caseType = caseType;
+            sleepController = new SleepController();
         }
 
         public void ToggleSleep()
         {
-            if(!isOn)
+            if (!isOn)
             {
                 return;
             }
 
-            isSleeping = !isSleeping;
+            sleepController.ToggleSleep();
         }
 
         public override void TogglePower()
@@ -45,6 +54,7 @@ namespace OOPExample
             {
                 return;
             }
+
             base.TogglePower();
         }
     }
