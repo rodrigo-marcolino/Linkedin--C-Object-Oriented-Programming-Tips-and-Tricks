@@ -1,0 +1,7 @@
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\bin\Debug\OOPExample.exe.config
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\bin\Debug\OOPExample.exe
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\bin\Debug\OOPExample.pdb
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\obj\Debug\OOPExample.csprojAssemblyReference.cache
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\obj\Debug\OOPExample.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\obj\Debug\OOPExample.exe
+C:\Users\rodrigo\source\repos\Linkedin\C# Object-Oriented Programming Tips and Tricks\OOPExample\obj\Debug\OOPExample.pdb
